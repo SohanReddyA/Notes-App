@@ -1,0 +1,55 @@
+.NoteTitle {
+  position: absolute;
+}
+#Title {
+  font-weight: bolder;
+}
+.NoteBody {
+  position: absolute;
+  top: 40px;
+  size: 1em;
+}
+.Note {
+  display: flex;
+  width: 30%;
+  min-height: 150px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(252, 157, 3);
+  border-radius: 16px;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+.NoteClose {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.btn {
+  margin-top: 10px;
+  margin-left: 40%;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.inp {
+  background-color: transparent;
+  border: 0px;
+}
+@media (max-width: 576) {
+  .display-4 {
+    font-size: 150%;
+  }
+  #dark{
+      
+  }
+}

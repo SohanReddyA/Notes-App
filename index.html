@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      rel="stylesheet"
+    />
+    <script src="./Scripts/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+    <nav
+      class="navbar navbar-light navbar-expand-sm bg-light sticky-top"
+      style="border-bottom: 1px solid black;"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i id="logo" class="fas fa-sticky-note fa-2x"></i>
+          <h1 class="display-4" style="display: inline;">Notes</h1>
+        </a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item"></li>
+        <li class="nav-item ml-auto">
+          <a class="nav-link" id='dark' href="#" onclick="Theme()"
+            >Change Theme to Dark</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid">
+      <button
+        onclick="clone()"
+        id="add"
+        class="btn btn-outline-secondary btn-lg"
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div id="NoteContainer" >
+    </div>
+    
+  </body>
+</html>
