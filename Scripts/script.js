@@ -32,7 +32,7 @@ function clone() {
 }
 function template() {
   return `
-  <div class="Note">
+<div class="Note" id='note'>
   <div class="NoteHeader">
     <span class="NoteClose">
       <a href="#" onclick='this.parentNode.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode.parentNode); return false;'>
@@ -41,14 +41,39 @@ function template() {
     </span>
   </div>
   <div class="NoteTitle" >
-    <input type="text" id="Title"  class="inp" placeholder="Enter the Title"/>
+    <input type="text" id="Title"  class="inp text-center" placeholder="Enter the Title"/>
   </div>
   <div class="NoteBody">
-    <textarea id="Body" class="inp" oninput="auto_grow(this)" placeholder="Enter the body"></textarea>
+    <textarea id="Body" class="inp" oninput="auto_grow(this,this.parentNode.parentNode.className)" placeholder="Enter the body"></textarea>
   </div>
 </div>`;
 }
-function auto_grow(element) {
+function auto_grow(element, x) {
   element.style.height = '5px';
   element.style.height = element.scrollHeight + 'px';
+  console.log(element.style.height);
+  if (element.style.height > '200px') {
+    document.getElementById('note').style.height = '400px';
+  }
+  if (element.style.height > '300px') {
+    document.getElementById('note').style.height = '500px';
+  }
+  if (element.style.height > '400px') {
+    document.getElementById('note').style.height = '600px';
+  }
+  if (element.style.height > '500px') {
+    document.getElementById('note').style.height = '700px';
+  }
+  if (element.style.height > '600px') {
+    document.getElementById('note').style.height = '800px';
+  }
+  if (element.style.height > '700px') {
+    document.getElementById('note').style.height = '900px';
+  }
+  if (element.style.height > '800px') {
+    document.getElementById('note').style.height = '1000px';
+  }
+  if (element.style.height > '900px') {
+    document.getElementById('note').style.height = '1100px';
+  }
 }
