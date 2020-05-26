@@ -41,10 +41,14 @@ function template() {
     </span>
   </div>
   <div class="NoteTitle" >
-    <input type="text" id="Title" class="inp" placeholder="Enter the Title"/>
+    <input type="text" id="Title"  class="inp" placeholder="Enter the Title"/>
   </div>
   <div class="NoteBody">
-    <input type="text" id="Body" class="inp" placeholder="Enter the body"/>
+    <textarea id="Body" class="inp" oninput="auto_grow(this)" placeholder="Enter the body"></textarea>
   </div>
 </div>`;
+}
+function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight)+"px";
 }

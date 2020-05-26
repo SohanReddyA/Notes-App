@@ -3,17 +3,27 @@
 }
 #Title {
   font-weight: bolder;
+  width: 350px;
+}
+textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 50px;
+  width: 350px;
 }
 .NoteBody {
   position: absolute;
   top: 40px;
   size: 1em;
 }
+#NoteContainer {
+  max-height: 300px;
+}
 .Note {
   display: flex;
-  width: 30%;
-  min-height: 150px;
+  min-width: 400px;
   margin: 20px;
+  height: 300px;
   padding: 10px;
   background-color: rgb(252, 157, 3);
   border-radius: 16px;
@@ -45,11 +55,20 @@ a:hover {
   background-color: transparent;
   border: 0px;
 }
-@media (max-width: 576) {
-  .display-4 {
-    font-size: 150%;
+@media (max-width: 486) {
+  #Title {
+    width: 120px;
   }
-  #dark{
-      
+  #Body {
+    width: 120px;
+  }
+  .NoteTitle {
+    position: absolute;
+    top: 30px;
+  }
+  .NoteBody {
+    position: absolute;
+    top: 80px;
+    size: 1em;
   }
 }
