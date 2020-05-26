@@ -5,6 +5,9 @@
   font-weight: bolder;
   width: 350px;
 }
+::placeholder{
+  color: black;
+}
 textarea {
   resize: none;
   overflow: hidden;
