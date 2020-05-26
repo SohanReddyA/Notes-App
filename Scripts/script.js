@@ -51,7 +51,6 @@ function template() {
 function auto_grow(element, x) {
   element.style.height = '5px';
   element.style.height = element.scrollHeight + 'px';
-  console.log(element.style.height);
   if (element.style.height > '200px') {
     document.getElementById('note').style.height = '400px';
   }
