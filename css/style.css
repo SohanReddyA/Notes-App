@@ -11,6 +11,9 @@ textarea {
   min-height: 50px;
   width: 350px;
 }
+textarea::placeholder {
+  color: black;
+}
 .NoteBody {
   position: absolute;
   top: 40px;
