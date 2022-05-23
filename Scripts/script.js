@@ -51,28 +51,25 @@ function template() {
 function auto_grow(element, x) {
   element.style.height = '5px';
   element.style.height = element.scrollHeight + 'px';
-  if (element.style.height > '200px') {
-    document.getElementById('note').style.height = '400px';
-  }
-  if (element.style.height > '300px') {
-    document.getElementById('note').style.height = '500px';
-  }
-  if (element.style.height > '400px') {
-    document.getElementById('note').style.height = '600px';
-  }
-  if (element.style.height > '500px') {
-    document.getElementById('note').style.height = '700px';
-  }
-  if (element.style.height > '600px') {
-    document.getElementById('note').style.height = '800px';
-  }
-  if (element.style.height > '700px') {
-    document.getElementById('note').style.height = '900px';
-  }
-  if (element.style.height > '800px') {
-    document.getElementById('note').style.height = '1000px';
-  }
-  if (element.style.height > '900px') {
+  let y = parseInt(
+    element.style.height.substring(0, element.style.height.length - 2)
+  );
+  console.log(y > 200);
+  if (y > 900) {
     document.getElementById('note').style.height = '1100px';
+  } else if (y > 800) {
+    document.getElementById('note').style.height = '1000px';
+  } else if (y > 700) {
+    document.getElementById('note').style.height = '900px';
+  } else if (y > 600) {
+    document.getElementById('note').style.height = '800px';
+  } else if (y > 500) {
+    document.getElementById('note').style.height = '700px';
+  } else if (y > 400) {
+    document.getElementById('note').style.height = '600px';
+  } else if (y > 300) {
+    document.getElementById('note').style.height = '500px';
+  } else if (y > 200) {
+    document.getElementById('note').style.height = '400px';
   }
 }

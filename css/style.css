@@ -21,7 +21,6 @@ textarea::placeholder {
 .NoteBody {
   position: absolute;
   top: 40px;
-  size: 1em;
 }
 .Note {
   display: flex;
